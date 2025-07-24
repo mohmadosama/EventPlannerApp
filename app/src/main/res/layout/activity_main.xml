@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7fa"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:elevation="8dp"
+            android:padding="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/white"
+                android:contentDescription="شعار التطبيق"
+                android:padding="1dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tvAppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-35dp"
+                android:fontFamily="sans-serif-light"
+                android:text="إدارة الفعاليات"
+                android:textColor="#2c3e50"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAppSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAppTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-light"
+                android:text="نظم فعالياتك بسهولة وفعالية"
+                android:textColor="#7f8c8d"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mainActionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="● الإجراءات الرئيسية"
+                android:textColor="#2c3e50"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAddEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="#3498db"
+                    android:elevation="6dp"
+                    android:text="إضافة فعالية"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:id="@+id/btnEventList"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="#27ae60"
+                    android:elevation="6dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="قائمة الفعاليات"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEventSchedule"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="#9b59b6"
+                    android:elevation="6dp"
+                    android:text="جدول الفعاليات"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:id="@+id/btnSearchEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="#e74c3c"
+                    android:elevation="6dp"
+                    android:text="البحث عن فعالية"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/managementSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainActionsLayout">
+
+            <TextView
+                android:id="@+id/tvManagementTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◆ إدارة الفعاليات"
+                android:textColor="#2c3e50"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnEventDetails"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="#34495e"
+                android:elevation="4dp"
+                android:text="تفاصيل الفعالية"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvManagementTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnEventDetails">
+
+                <Button
+                    android:id="@+id/btnEditEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="#f39c12"
+                    android:elevation="4dp"
+                    android:text="تعديل فعالية"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:id="@+id/btnDeleteEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="#e74c3c"
+                    android:elevation="4dp"
+                    android:text="حذف فعالية"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/userSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/managementSection">
+
+            <TextView
+                android:id="@+id/tvUserTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★ المستخدم والإعدادات"
+                android:textColor="#2c3e50"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:id="@+id/userButtonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUserTitle"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnUserProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="#16a085"
+                    android:elevation="4dp"
+                    android:text="ملف المستخدم"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:id="@+id/btnNotifications"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="#e67e22"
+                    android:elevation="4dp"
+                    android:text="الإشعارات"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@id/userButtonsLayout"
+                android:layout_marginTop="12dp"
+                android:background="#95a5a6"
+                android:elevation="4dp"
+                android:text="الإعدادات"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/supportSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userSection">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="♦ المساعدة والدعم"
+                android:textColor="#2c3e50"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHelp"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="#1abc9c"
+                    android:elevation="4dp"
+                    android:text="مساعدة ودعم"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:id="@+id/btnAbout"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="#2980b9"
+                    android:elevation="4dp"
+                    android:text="عن التطبيق"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRateUs"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#e67e22"
+                android:elevation="6dp"
+                android:text="⭐ تقييم التطبيق ⭐"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="تطبيق إدارة الفعاليات © 2024"
+            android:textColor="#7f8c8d"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/supportSection" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

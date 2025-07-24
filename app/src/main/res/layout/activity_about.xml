@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/headerBar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/red">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="عن التطبيق"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تطبيق Event Planner هو تطبيق بسيط يساعدك على تنظيم فعالياتك بسهولة من خلال إضافة وعرض وتعديل وحذف الفعاليات. تم تطوير هذا التطبيق كمشروع تعليمي لمهندسين المستقبل."
+        android:textSize="16sp"
+        android:textColor="@color/white"
+
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/versionInfo"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الإصدار: 1.0\nالمطور: فريق S.M"
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+        android:layout_below="@id/descriptionText"
+       />
+
+    <ImageView
+        android:id="@+id/appImage"
+        android:layout_width="match_parent"
+        android:layout_height="1800dp"
+        android:layout_alignParentBottom="true"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/about"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="220dp"
+        />
+
+
+
+</RelativeLayout>

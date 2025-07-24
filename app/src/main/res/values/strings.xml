@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="my_name">Mohammed Osama</string>
+    <string name="welcome">welcome, Mohammed</string>
+    <string name="donate">Donate</string>
+    <string name="seek">Seek</string>
+    <string name="history">History</string>
+</resources>
