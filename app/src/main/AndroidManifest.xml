@@ -39,8 +39,7 @@
             android:exported="false" />
         <activity android:name="com.example.eventplannerapp.UserProfileActivity"
             android:exported="false" />
-        <activity android:name="com.example.eventplannerapp.SignupActivity"
-            android:exported="false" />
+
 
 
 
