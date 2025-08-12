@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvNotificationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="رسالة الإشعار"
+        android:textSize="16sp"
+        android:textColor="#2c3e50"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNotificationDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20-08-2025 15:00"
+        android:textSize="14sp"
+        android:textColor="#7f8c8d"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

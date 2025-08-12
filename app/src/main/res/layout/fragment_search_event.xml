@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="ابحث عن فعالية"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/search_edittext_bg"
+        android:textColor="#2C3E50"
+        android:textSize="16sp"
+        android:textColorHint="#9AA0A6"
+        android:fontFamily="sans-serif"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/listViewSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#D1D5DB"
+        android:dividerHeight="1dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+    <TextView
+        android:id="@+id/tvNoResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="لا توجد فعاليات مطابقة"
+        android:textColor="#e74c3c"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="12dp" />
+
+</LinearLayout>

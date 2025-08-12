@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f7fa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:elevation="6dp"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/btnDeleteEvent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="حذف الفعالية"
+                android:src="@drawable/ic_delete"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgEventPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_event_placeholder"
+            android:contentDescription="صورة الفعالية"
+            android:background="@drawable/image_rounded_corners" />
+
+        <!-- الحقول القابلة للتعديل -->
+        <EditText
+            android:id="@+id/etEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="اسم الفعالية"
+            android:textSize="24sp"
+            android:textColor="#2c3e50"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <EditText
+            android:id="@+id/etEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="تاريخ الفعالية"
+            android:textSize="16sp"
+            android:textColor="#34495e"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/etEventLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="مكان الفعالية"
+            android:textSize="16sp"
+            android:textColor="#7f8c8d"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/etEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="وصف الفعالية"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="top"
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="حفظ التعديلات"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#27ae60"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

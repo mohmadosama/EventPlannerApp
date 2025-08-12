@@ -26,22 +26,9 @@
             android:exported="false" />
         <activity android:name="com.example.eventplannerapp.MainActivity"
             android:exported="false" />
-        <activity android:name="com.example.eventplannerapp.AddEventActivity"
-            android:exported="false" />
-
-        <activity android:name="com.example.eventplannerapp.SettingsActivity"
-            android:exported="false" />
-        <activity android:name="com.example.eventplannerapp.AboutActivity"
-            android:exported="false" />
-        <activity android:name="com.example.eventplannerapp.HelpActivity"
-            android:exported="false" />
-        <activity android:name="com.example.eventplannerapp.RateUsActivity"
-            android:exported="false" />
-        <activity android:name="com.example.eventplannerapp.UserProfileActivity"
-            android:exported="false" />
 
 
-
+<!--        WelcomeActivity-->
 
 
 
