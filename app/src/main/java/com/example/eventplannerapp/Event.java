@@ -9,6 +9,7 @@ public class Event implements Serializable {
     private String description;
     private int imageResId;
 
+
     public Event(String name, String date, String location) {
         this.name = name;
         this.date = date;

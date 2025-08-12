@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
@@ -45,6 +46,7 @@ public class EventAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.item_event, parent, false);
             holder = new ViewHolder();
             holder.tvName = convertView.findViewById(R.id.tvEventName);
+            holder.imgIcon = convertView.findViewById(R.id.imgEventIcon);
             holder.tvDate = convertView.findViewById(R.id.tvEventDate);
             holder.tvLocation = convertView.findViewById(R.id.tvEventLocation);
 //            holder.btnDelete = convertView.findViewById(R.id.btnDeleteEvent);
@@ -58,6 +60,7 @@ public class EventAdapter extends BaseAdapter {
         holder.tvName.setText(event.getName());
         holder.tvDate.setText(event.getDate());
         holder.tvLocation.setText(event.getLocation());
+//        holder.imgIcon.setImageResource(event.getImageResId());
 
 //        holder.btnDelete.setOnClickListener(v -> {
 //            // حذف العنصر من القائمة
@@ -71,6 +74,7 @@ public class EventAdapter extends BaseAdapter {
 
     private static class ViewHolder {
         TextView tvName, tvDate, tvLocation;
+        ImageView imgIcon;
         ImageButton btnDelete;
     }
 
